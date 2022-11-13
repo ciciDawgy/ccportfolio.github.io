@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calendar</title>
+</head>
+<body>
+  <!--https://code-boxx.com/simple-pure-javascript-calendar-events/-->
+    <div class="container">
+        <div class="calendar">
+          <div class="month">
+            <i class="fas fa-angle-left prev" id="left"></i>
+            <div class="date">
+              <h1>hello </h1>
+              <p>wassup</p>
+            </div>
+            <i class="fas fa-angle-right next" id="right"></i>
+          </div>
+          <div class="weekdays">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          <div class="days">
+            <div class="modal"><p>Hello hello hello</p></div>
+          </div>
+         </div>
+
+         <!--<div id="newEventModal">
+           <h2>New Event</h2>
+           <input id="eventTitleInput" placeholder="Event Title" />
+           <button id="saveButton">Save</button>
+           <button id="cancelButton">Cancel</button>
+         </div>-->
+
+  
+
+        
+         <div class="slider-container">
+          <div
+            class="slide active"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1491929007750-dce8ba76e610?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2067&q=80')"
+           ></div>
+
+          <div
+            class="slide"
+            style="
+              background-image: url('https://images.pexels.com/photos/158028/bellingrath-gardens-alabama-landscape-scenic-158028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+            "
+          ></div>
+    
+          <div
+            class="slide"
+            style="
+              background-image: url('https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821_1280.jpg');
+            "
+          ></div>
+    
+          <div
+            class="slide"
+            style="
+              background-image: url('https://cdn.pixabay.com/photo/2016/10/25/13/16/pumpkin-1768857_1280.jpg');
+            "
+          ></div>
+    
+          <div
+            class="slide"
+            style="
+              background-image: url('https://images.pexels.com/photos/1661905/pexels-photo-1661905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+            "
+          ></div>
+          <div
+          class="slide active"
+          style="
+            background-image: url('https://images.pexels.com/photos/3334473/pexels-photo-3334473.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+          "
+        ></div>
+        <div
+          class="slide"
+          style="
+            background-image: url('https://images.pexels.com/photos/1205648/pexels-photo-1205648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+          "
+        ></div>
+  
+        <div
+          class="slide"
+          style="
+            background-image: url('https://images.pexels.com/photos/159406/tulips-netherlands-flowers-bloom-159406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+          "
+        ></div>
+  
+        <div
+          class="slide"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80');
+          "
+        ></div>
+  
+        <div
+          class="slide"
+          style="
+            background-image: url('https://cdn.pixabay.com/photo/2018/08/10/03/19/pathway-3596034_1280.jpg');
+          "
+        ></div>
+
+        <div
+          class="slide"
+          style="
+            background-image: url('https://images.pexels.com/photos/1247526/pexels-photo-1247526.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+          "
+        ></div>
+
+        <div
+          class="slide"
+          style="
+            background-image: url('https://images.pexels.com/photos/210205/pexels-photo-210205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+          "
+        ></div>
+
+        <!--<div class="modalContainer">
+          <div class="modalFive">
+            <h2>Modal</h2>
+            <i class="fa-solid fa-x"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur quos commodi nemo ullam id fugiat est, dicta dolorum ducimus soluta ratione maxime unde fugit repellendus iste libero, nulla amet?</p>
+          </div>
+         </div>-->
+          
+    
+      </div>
+
+    
+      <!--<form action="/action_page.php" id="usrform">
+        Name: <input type="text" name="usrname">
+        <input type="submit">
+      </form>
+      <br>
+      <textarea rows="4" cols="50" name="comment" form="usrform">
+      Enter text here...</textarea>-->
+
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
