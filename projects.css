@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+}
+
+ul {
+    position: absolute;
+    top: 10px;
+    left: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.btnOne {
+    background-color: aqua;
+    padding: 15px;
+    z-index: 20;
+}
+
+.container {
+    margin-bottom: 450px;
+}
+
+li {
+    list-style: none;
+    font-size: 30px;
+    margin: 8px;
+}
+
+li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li:hover {
+    opacity: 0.7;
+}
+
+
+.projects {
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    transform: translateY(50px);
+}
+
+.project {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.fa-github {
+    z-index: 400;
+    font-size: 50px;
+    position: absolute;
+    top: 100px;
+    left: 110px;
+    color: #333;
+}
+
+.project::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 500ms ease-in-out;
+}
+
+.project:hover::after {
+    opacity: 1;
+}
+
+  
+.project img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: all 500ms ease-in-out;
+}
+
+
+.portfolio__img {
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1);
+}
+
+.portfolioItem {
+    background-size: fit-content;
+}
+
+.project:hover img {
+    transform: scale(1.2);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.project:hover a {
+    z-index: 10;
+}
+
+.book {
+    object-fit: cover;
+}
+
+/*.nav__link {
+    color: inherit;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h2);
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: var(--clr-accent);
+}*/
+
+/*.nav-toggle {
+    padding: .5em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 1000;
+}
+
+.nav-open .nav {
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
+}*/
