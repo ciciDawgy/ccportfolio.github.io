@@ -41,10 +41,11 @@ html {
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
+
 .month i {
   font-size: 2.5rem;
   cursor: pointer;
-}
+} 
 
 .month h1 {
   font-size: 3rem;
@@ -115,13 +116,8 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
   overflow: hidden;
-  margin: 0;
   background-position: center center;
   background-size: cover;
   transition: 0.4s;
@@ -157,6 +153,7 @@ body::before {
   z-index: 1;
 }
 
+
 .slide.active {
   opacity: 1;
 }
@@ -169,16 +166,27 @@ body::before {
 
 @media(max-width: 768px) {
   .calendar {
-    width: 60rem;
+    width: 48rem;
     height: 52rem;
+    transform: translate(-120px, -10px);
   }
 }
 
 @media(max-width: 500px) {
    .calendar {
-    width: 40rem;
+    width: 43rem;
     height: 52rem;
     transform: translate(-120px, -10px);
+   }
+
+   .days {
+    padding: 0rem;
+   }
+
+   .days div {
+      margin: 0.3rem;
+      width: calc(37rem / 7);
+      height: 5rem;
    }
 }
 
