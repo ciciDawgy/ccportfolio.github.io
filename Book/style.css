@@ -197,7 +197,7 @@ button:hover i {
     position: absolute;
     top: 80%;
     right: 30%;
-    color: transparent;
+    color: gray;
     opacity: 1;
 } 
 
@@ -206,17 +206,14 @@ button:hover i {
     position: absolute;
     top: 85%;
     right: 190%;
-    color: transparent;
 }
 
 i {
     font-size: 20px;
-    color: transparent;
 }
 
 button {
     border: none;
-    color: transparent;
     background-color: transparent;
     cursor: pointer;
     margin: 10px;
