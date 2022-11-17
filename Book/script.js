@@ -79,11 +79,11 @@ let maxLocation = numOfPapers + 1;
     } else {
         book.style.transform = "translateX(0%)";
     }
-}*/
-   /* book.style.transform = "translateX(50%)";*/
-    /*nextBtn.style.transform = "translateX(180px)";*/
+}
+    book.style.transform = "translateX(50%)";
+    nextBtn.style.transform = "translateX(180px)";*/
 
-    function openBook() {
+function openBook() {
     book.style.transform = "translateX(50%)";
     prevBtn.style.transform = "translateX(-180px)";
     nextBtn.style.transform = "translateX(180px)";
@@ -92,7 +92,9 @@ let maxLocation = numOfPapers + 1;
 function closeBook(isAtBeginning) {
     if(isAtBeginning){
         book.style.transform = "translateX(0%)";
-    } 
+    } else {
+        book.style.transform = "translateX(100%)";
+    }
     prevBtn.style.transform = "translateX(0px)";
     nextBtn.style.transform = "translateX(0px)";
 }
@@ -104,6 +106,7 @@ function goNextPage() {
                 openBook();
                     page1.classList.add("flipped");
                     page1.style.zIndex = 1;
+                    break;
             case 2:
                 if(myVideo.currentTime = 20) {
                     page2.classList.add("flipped"); 
@@ -172,7 +175,7 @@ function goPrevPage() {
                 page1.style.zIndex = 22;
                 break;
             case 3:
-                if(myVideo.currentTime = 0) {
+                if(myVideo.currentTime = 5) {
                 page2.classList.remove("flipped");
                 page2.style.zIndex = 20; }
                 break;
