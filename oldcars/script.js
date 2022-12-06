@@ -15,7 +15,7 @@ function ready() {
     }
 
     var quantityInputs = document.getElementsByClassName('cart-quantity-input')
-    for(var i = 0; i < quantityInputs.length; i++) {
+    for (var i = 0; i < quantityInputs.length; i++) {
         var input = quantityInputs[i];
         input.addEventListener('change', quantityChanged)
     }
@@ -86,9 +86,9 @@ function addToCartClicked(event) {
         var cartRowContents = `
             <div class="cart-item cart-column">
             <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
-            <span class="cart-item-title">car</span>
+            <span class="cart-item-title">${title}</span>
         </div>
-        <span class="cart-price cart-column">$19.99</span>
+        <span class="cart-price cart-column">${price}</span>
         <div class="cart-quantity cart-column">
             <input class="cart-quantity-input" type="number" value="1">
             <button class="btn btn-danger" type="button">REMOVE</button>
@@ -133,6 +133,46 @@ cart.addEventListener('click', showContainer);
 removeCart.addEventListener('click', () => {
     containerTwo.classList.remove('showContainer');
 })
+
+const slider = document.querySelector('.slider');
+const sliderImgs = document.querySelectorAll('.slider img');
+const prev = document.querySelector('.prevBtn');
+const next = document.querySelector('.nextBtn');
+
+
+const container = document.querySelector('.container');
+
+const body = document.body;
+const slides = document.querySelectorAll('.slide')
+
+let activeSlide = 0
+
+next.addEventListener('click', () => {
+  activeSlide++
+
+  if (activeSlide > slides.length - 1) {
+    activeSlide = 0
+  }
+
+  setActiveSlide()
+})
+
+prev.addEventListener('click', () => {
+  activeSlide--
+
+  if (activeSlide < 0) {
+    activeSlide = slides.length - 1
+  }
+
+  setActiveSlide()
+})
+
+
+function setActiveSlide() {
+  slides.forEach((slide) => slide.classList.remove('active'))
+  slides[activeSlide].classList.add('active')
+}
+
 
 
 

@@ -14,10 +14,6 @@
 }
 
 
-/*::selection{
-  color: var(--white);
-  background: var(--blue);
-}*/
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
@@ -35,10 +31,6 @@ body {
   overflow: hidden;
 }
 
-/*.container {
-  max-width: 114rem;
-  margin: 0 auto;
-}*/
 
 .shop {
   background-color: #000;
@@ -51,19 +43,6 @@ body {
   opacity: 0.75;
 }
 
-/*#shopOne {
-  position: absolute;
-  top: 103%;
-  left: 44%;
-  cursor: pointer;
-}
-
-#shopTwo {
-  position: absolute;
-  top: 100%;
-  left: 45%;
-  cursor: pointer;
-}*/
 
 img {
   width: 100%;
@@ -242,9 +221,6 @@ a {
     background-color: rgba(0, 0, 0, .8);
   }
   
-/*.slider img {
-    transform: translateX(-150px);
-}*/
 
 .prevBtn {
     position: absolute;
