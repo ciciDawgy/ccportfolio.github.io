@@ -44,5 +44,3 @@ list[i].addEventListener('click', function(){
     }
 })
 }
-
-

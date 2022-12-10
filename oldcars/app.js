@@ -1,4 +1,3 @@
-
 (function(){
     const cartInfo = document.getElementById('cart-info');
     const cart = document.querySelector('.cart');
@@ -20,4 +19,3 @@
         })
     })()
 }
-
