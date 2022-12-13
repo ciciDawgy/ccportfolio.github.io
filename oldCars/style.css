@@ -26,7 +26,6 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
-  background-color: #007bff;
 }
 
 .container {
@@ -811,10 +810,15 @@ header img {
 
   .menu-sub {
     margin-top: 0px;
+    padding: .5em;
+  }
+
+  .menu-sub img {
+    width: 70%;
   }
 
   .menu-col {
-    margin: 18px;
+    margin: 18px 8px;
   }
 
   .menu-col img {
